@@ -5,6 +5,8 @@
 }
 body {
   height: 100vh;
+  /* the overflow is used so i can hide the scrol bars that showed */
+  overflow: hidden;
 }
 form {
   display: flex;
@@ -15,7 +17,7 @@ form {
 }
 input,
 select {
-  min-width: 350px;
+  width: 350px;
   height: 35px;
   padding-inline: 3px;
 }
@@ -28,16 +30,22 @@ div {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 20px;
+  margin-top: 25px;
 }
+
 .box {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   background-color: orange;
-  margin-top: 30px;
   width: 300px;
   height: 40px;
+  font-size: 20px;
   border: 0.2px solid black;
   border-radius: 5px;
+}
+
+p {
+  /* the probelm is that p is used as an element of the grid so find a solution to center it */
 }
