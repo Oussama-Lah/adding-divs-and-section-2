@@ -19,6 +19,7 @@ btn.addEventListener("click", function (e) {
     //this part so we can warne the user thatn one of the boxes is not filled.
     let wraning = document.createElement("p");
     wraning.textContent = "Warning!!! You have not completed the boxes";
+    wraning.className = "warning";
     wraning.style.color = "red";
     rslt.appendChild(wraning);
   }

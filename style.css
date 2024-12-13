@@ -45,7 +45,6 @@ div {
   border: 0.2px solid black;
   border-radius: 5px;
 }
-
-p {
-  /* the probelm is that p is used as an element of the grid so find a solution to center it */
+.warning {
+  grid-column: span 3; /*so that we can center the error msg */
 }
